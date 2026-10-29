@@ -1,1 +1,82 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#e62129">
+  <title>Boss Manok</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #171717;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+    header {
+      background: #e62129;
+      padding: 24px 16px;
+      text-align: center;
+      border-bottom: 5px solid #ffd600;
+    }
+    header h1 { margin: 0; font-size: 30px; }
+    header p { margin-bottom: 0; }
+    main { padding: 18px; }
+    .card {
+      background: #262626;
+      border: 1px solid #444;
+      border-radius: 12px;
+      padding: 18px;
+      margin-bottom: 14px;
+    }
+    .card h2 { color: #ffd600; margin-top: 0; }
+    .item {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: 1px solid #444;
+    }
+    .amount { color: #ffd600; font-weight: bold; }
+    button {
+      background: #ffd600;
+      color: #171717;
+      border: 0;
+      border-radius: 8px;
+      padding: 12px;
+      width: 100%;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    footer { text-align: center; color: #aaa; padding: 20px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🐔 BOSS MANOK</h1>
+    <p>Business Management</p>
+  </header>
+  <main>
+    <section class="card">
+      <h2>Business Dashboard</h2>
+      <p>Welcome to Boss Manok!</p>
+      <div class="item"><span>Today's Sales</span><span class="amount">₱0.00</span></div>
+      <div class="item"><span>Today's Expenses</span><span class="amount">₱0.00</span></div>
+      <div class="item"><span>Net Profit</span><span class="amount">₱0.00</span></div>
+    </section>
+    <section class="card">
+      <h2>Business Modules</h2>
+      <div class="item">Sales Tracking</div>
+      <div class="item">Expenses</div>
+      <div class="item">Inventory</div>
+      <div class="item">Staff & Salaries</div>
+      <div class="item">Customer Credits</div>
+      <div class="item">Reports</div>
+    </section>
+    <button onclick="alert('Boss Manok app starter is ready!')">
+      GET STARTED
+    </button>
+  </main>
+  <footer>Boss Manok © 2026</footer>
+</body>
+</html>
