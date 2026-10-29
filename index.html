@@ -357,6 +357,17 @@ function updateDashboard(sales, expenses) {
 
 updateDashboard(4000, 3000);
 
+</style>
+
+<script>
+function calculateProfit() {
+  const sales = Number(document.getElementById('salesInput').value);
+  const expenses = Number(document.getElementById('expensesInput').value);
+
+  document.getElementById('salesAmount').textContent = '₱' + sales.toFixed(2);
+  document.getElementById('expensesAmount').textContent = '₱' + expenses.toFixed(2);
+  document.getElementById('profitAmount').textContent = '₱' + (sales - expenses).toFixed(2);
+}
 </script>
 
 </body>
